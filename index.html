@@ -6,13 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Willy Woodstick Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <div>logo</div>
-    <button>menu</button>
-    <nav>
+    <a class="logo" href="/"></a>
+    <input class="menu-state" id="menu-state" type="checkbox" />
+    <label class="menu-button" for="menu-state">
+      <span class="menu-icon"></span>
+    </label>
+    <nav class="header-nav">
       <a href="#about-me">about me</a>
       <a href="#my-skills">my skills</a>
       <a href="#gallery">gallery</a>
@@ -23,7 +31,7 @@
     <h1>Willy Woodstick</h1>
     <hr />
     <ul>
-      <li>Web Developer</li>
+      <li>Web Developer
       <li>Web Cam Model</li>
       <li>Wood Chopper</li>
     </ul>

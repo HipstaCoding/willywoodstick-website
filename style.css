@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+  background-color: #0A0E01;
+  color: #FFFCFC;
+  font-size: 1.5rem;
+}
+ 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  min-height: 135px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.265em;
+}
+
+.logo {
+  background-color: #C12E2F;
+  background-image: url("./images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 168px 78px;
+  width: 230px;
+  height: 135px;
+  display: block;
+}
+
+.menu-state {
+  display: none;
+}
+
+.menu-button {
+  width: 135px;
+  height: 135px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-icon, .menu-icon::before, .menu-icon::after {
+  display: block;
+  width: 60px;
+  height: 6px;
+  border-radius: 2.5px;
+  background-color: white;
+  left: 0;
+  transform-origin: 0px;
+  transition: all .2s ease-out;
+}
+
+.menu-icon {
+  position: relative;
+}
+
+.menu-icon::after, .menu-icon::before {
+  content: "";
+  position: absolute;
+}
+
+.menu-icon::before {
+  top: -21px;
+}
+
+.menu-icon::after {
+  top: 21px;
+}
+
+.menu-state:checked ~ .menu-button .menu-icon {
+  background: transparent;
+}
+
+.menu-state:checked ~ .menu-button .menu-icon::before {
+  transform: rotate(45deg);
+}
+
+.menu-state:checked ~ .menu-button .menu-icon::after {
+  transform: rotate(-45deg);
+}
+
+.header-nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.menu-state:checked ~ .header-nav {
+  max-height: 1000px;
+}
+
+.header-nav a {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header-nav a:hover {
+  background-color: white;
+  color: #0A0E01;
+}
