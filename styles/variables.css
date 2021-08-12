@@ -1,0 +1,12 @@
+:root {
+  /* sizes */
+  --header-height: 135px;
+  
+  /* colors */
+  --accent: #C12E2F;
+  --accent-hover:4;
+  --accent-pressed: #B71C1C;
+  
+  --primary-text: #FFFEFE;
+  --background: #0A0E01;
+}

@@ -1,8 +1,10 @@
 html {
   box-sizing: border-box;
-  background-color: #0A0E01;
+  background-color: var(--background);
   color: #FFFCFC;
   font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
 }
  
 *,
@@ -15,8 +17,21 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+/* Overflow fix */
+input {
+  max-width: 100%;
+}
+
 header {
-  min-height: 135px;
+  min-height: var(--header-height);
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.265em;
@@ -29,7 +44,7 @@ header {
   background-position: center;
   background-size: 168px 78px;
   width: 230px;
-  height: 135px;
+  height: var(--header-height);
   display: block;
 }
 
@@ -38,8 +53,8 @@ header {
 }
 
 .menu-button {
-  width: 135px;
-  height: 135px;
+  width: 130px;
+  height: var(--header-height);
   position: absolute;
   top: 0;
   right: 0;
@@ -56,8 +71,8 @@ header {
   border-radius: 2.5px;
   background-color: white;
   left: 0;
-  transform-origin: 0px;
-  transition: all .2s ease-out;
+  transform-origin: 50% 50%;
+  transition: all .5s ease-out;
 }
 
 .menu-icon {
@@ -82,17 +97,17 @@ header {
 }
 
 .menu-state:checked ~ .menu-button .menu-icon::before {
-  transform: rotate(45deg);
+  transform: translateY(350%) rotate(calc(2 * 360deg + 45deg));
 }
 
 .menu-state:checked ~ .menu-button .menu-icon::after {
-  transform: rotate(-45deg);
+  transform: translateY(-350%) rotate(calc(2 * -360deg + -45deg));
 }
 
 .header-nav {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s linear;
 }
 
 .menu-state:checked ~ .header-nav {
@@ -105,10 +120,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--primary-text);
+  transition: all 0.3s;
 }
 
 .header-nav a:hover {
-  background-color: white;
-  color: #0A0E01;
+  background-color: var(--primary-text);
+  color: var(--background);
 }
+

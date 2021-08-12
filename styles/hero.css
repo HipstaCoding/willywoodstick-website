@@ -1,0 +1,57 @@
+#hero {
+  --overlay: rgba(10, 14, 1, 0.7);
+  background: linear-gradient(var(--overlay), var(--overlay)), url("../images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: calc(100vh - var(--header-height));
+  padding: 0 30px;
+}
+
+#hero h1 {
+  font-size: 48px;
+}
+
+#hero hr {
+  width: 100%;
+}
+
+.hero-skills {
+  list-style: none;
+  padding: 0;
+}
+
+.hero-skills li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 2;
+} 
+
+.hero-skills li div {
+  width: 175px;
+}
+
+.hero-skills li::before, .hero-skills li::after {
+  content: " ";
+  display: block;
+  background-image: url("../images/axes-icon.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.hero-skills li::before {
+  margin-right: 10px;
+}
+
+.hero-skills li::after {
+  margin-left: 10px;
+}
+
+#hero .primary-button {
+  width: 100%;
+}
