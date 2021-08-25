@@ -1,6 +1,6 @@
 #hero {
   --overlay: rgba(10, 14, 1, 0.7);
-  background: linear-gradient(var(--overlay), var(--overlay)), url("../images/hero-mobile.jpg");
+  background: linear-gradient(#00000000, var(--overlay), var(--overlay)), url("../images/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -8,8 +8,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  min-height: calc(100vh - var(--header-height));
   padding: 0 30px;
+  min-height: calc(100vh - var(--header-height));
 }
 
 #hero h1 {
@@ -55,3 +55,35 @@
 #hero .primary-button {
   width: 100%;
 }
+
+.social-container {
+  display: flex;
+
+}
+
+.social-icon {
+  display: block;
+  width: 78px;
+  min-height: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.social-icon svg {
+  padding: 20px;
+  width: 78px;
+  height: auto;
+}
+
+.social-icon:hover svg {
+  transform: scale(105%);
+  fill: var(--color-accent-hover);
+}
+
+.social-icon:active svg  {
+  transition: all 0.3s;
+  fill: var(--color-accent-pressed);
+  transform: scale(95%);
+}
+

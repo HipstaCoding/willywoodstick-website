@@ -3,10 +3,10 @@
   --header-height: 135px;
   
   /* colors */
-  --accent: #C12E2F;
-  --accent-hover:4;
-  --accent-pressed: #B71C1C;
+  --color-accent: #C12E2F;
+  --color-accent-hover: #FB3C3D;
+  --color-accent-pressed: #B71C1C;
   
-  --primary-text: #FFFEFE;
-  --background: #0A0E01;
+  --color-primary-text: #FFFEFE;
+  --color-bg: #0A0E01;
 }

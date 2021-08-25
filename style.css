@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background-color: var(--background);
+  background-color: var(--color-bg);
   color: #FFFCFC;
   font-size: 1.5rem;
   font-family: 'Quicksand', sans-serif;
@@ -120,12 +120,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--primary-text);
+  color: var(--color-primary-text);
   transition: all 0.3s;
 }
 
 .header-nav a:hover {
-  background-color: var(--primary-text);
-  color: var(--background);
+  background-color: var(--color-primary-text);
+  color: var(--color-bg);
 }
 
