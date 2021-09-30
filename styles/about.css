@@ -21,4 +21,5 @@
   margin: 60px -20px 0;
   width: calc(100% + 40px);
   height: auto;
+  display: block;
 }

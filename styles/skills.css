@@ -1,0 +1,93 @@
+#my-skills {
+  background-image: url("../images/Axes.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.skills-container {
+  margin-top: 60vw;
+
+  display: grid;
+  gap: 30px;
+}
+
+.skills-container .skill {
+}
+
+.skill {
+  min-height: 250px;
+  max-height: 350px;
+  height: 1px;
+  width: 100%;
+  perspective: 1000px; 
+}
+
+.skill-icon .fas {
+  position: absolute;
+  font-family: "Font Awesome 5 Free"; 
+  content: "\f2f9";
+  font-weight: 900;
+  font-size: 36px;
+  right: 30px;
+  bottom: 30px;
+  width: 36px;
+  height: 36px;
+  color: var(--color-accent);
+  transition: all 0.5s;
+}
+
+.skill-content {
+  border: 5px solid var(--color-accent);
+  border-radius: 40px 0 40px 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.skill-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skill:hover .skill-content {
+  transform: rotateX(180deg);
+}
+
+.skill:hover .fas {
+  opacity: 0;
+}
+
+.skill-text {
+  padding: 22px 33px;
+  transform: rotateX(180deg);
+}
+
+.skill-icon, .skill-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.skill-html .skill-icon {
+  background-image: url("../images/HTML.svg");
+}
+
+.skill-css .skill-icon {
+  background-image: url("../images/CSS.svg");
+}
+
+.skill-figma .skill-icon {
+  background-image: url("../images/FIGMA.svg");
+}
+
+.skill-vscode .skill-icon {
+  background-image: url("../images/VSCODE.svg");
+}
+
+.skill-github .skill-icon {
+  background-image: url("../images/GITHUB.svg");
+}
