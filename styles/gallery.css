@@ -1,0 +1,17 @@
+#gallery {
+  background-image: url("/images/Gallery-Background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  padding-bottom: 200px;
+}
+
+.instagram-media {
+  margin-bottom: 50px!important;
+}
+
+.instagram-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
