@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
@@ -9,7 +13,6 @@ html, body {
 }
 
 html {
-  box-sizing: border-box;
   background-color: var(--color-bg);
   color: #FFFCFC;
   font-size: 1.5rem;
@@ -44,8 +47,21 @@ header {
   background-color: var(--color-bg);
 }
 
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+
+
+textarea {
+  resize: none;
+}
+
 .logo {
-  background-color: #C12E2F;
+  background-color: var(--color-accent);
   background-image: url("./images/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -76,7 +92,7 @@ header {
   width: 60px;
   height: 6px;
   border-radius: 2.5px;
-  background-color: white;
+  background-color: var(--color-primary-text);
   left: 0;
   transform-origin: 50% 50%;
   transition: all .5s ease-out;
@@ -125,7 +141,7 @@ header {
 }
 
 .header-nav a {
-  height: 100px;
+  height: 20vh;
   width: 100%;
   display: flex;
   justify-content: center;

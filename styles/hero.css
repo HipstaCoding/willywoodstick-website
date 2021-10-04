@@ -1,6 +1,6 @@
 #hero {
   --overlay: rgba(10, 14, 1, 0.7);
-  background: linear-gradient(#00000000, var(--overlay), var(--overlay)), url("../images/hero-mobile.jpg");
+  background: linear-gradient( var(--overlay), var(--overlay)), url("../images/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -12,16 +12,21 @@
 }
 
 #hero h1 {
+  max-width: 300px;
+  text-align: right;
   font-size: 48px;
+  margin: 0;
 }
 
 #hero hr {
   width: 100%;
+  margin: 20px 0;
 }
 
 .hero-skills {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .hero-skills li {
@@ -35,7 +40,7 @@
   width: 175px;
 }
 
-.hero-skills li::before, .hero-skills li::after {
+.hero-skills li::before {
   content: " ";
   display: block;
   background-image: url("../images/axes-icon.svg");
@@ -53,6 +58,7 @@
 
 #hero .primary-button {
   width: 100%;
+  margin: 20px 0;
 }
 
 .social-container {
@@ -62,7 +68,6 @@
 .social-icon {
   display: block;
   width: 78px;
-  min-height: ;
   background-repeat: no-repeat;
   background-size: cover;
 

@@ -8,9 +8,12 @@
   --color-accent: #C12E2F;
   --color-accent-hover: #FB3C3D;
   --color-accent-pressed: #B71C1C;
+  --color-focus: #3898F3;
+  --color-success: #60D394;
 
   --color-highlight: #FFC551;
   
   --color-primary-text: #FFFEFE;
   --color-bg: #0A0E01;
 }
+

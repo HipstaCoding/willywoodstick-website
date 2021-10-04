@@ -40,7 +40,7 @@
   width: 36px;
   height: 36px;
   color: var(--color-accent);
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 .skill-content {
