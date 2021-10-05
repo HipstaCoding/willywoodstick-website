@@ -1,18 +1,5 @@
-@keyframes effect_dylan {
-  50% {
-  }
-  99% {
-    border: 10px solid transparent;
-    /* transform: scale(0); */
-    /* opacity: 0; */
-  }
-  100% {
-    /* transform: scale(0); */
-    opacity: 1;
-  }
-}
-
 .primary-button {
+  font-family: 'Quicksand', sans-serif;
   background-color: var(--color-accent);
   color: var(--color-primary-text);
   box-shadow: 0px 0px 20px 5px#550808, inset 0px 0px 0px 0px#550808;
@@ -59,6 +46,8 @@
 /* Input fields */
 
 .text-field {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.1em;
   background-color: transparent;
   color: var(--color-text-primary);
   border: none;

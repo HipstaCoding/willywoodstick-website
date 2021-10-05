@@ -13,7 +13,7 @@
 
 #hero h1 {
   max-width: 300px;
-  text-align: right;
+  text-align: center;
   font-size: 48px;
   margin: 0;
 }
@@ -63,30 +63,54 @@
 
 .social-container {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .social-icon {
   display: block;
-  width: 78px;
+  width: 100px;
+  height: 100px;
+  padding: 18px;
+  flex: 0 1 auto;
+}
+
+.social-icon i {
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
   background-repeat: no-repeat;
-  background-size: cover;
-
+  background-size: contain;
+  background-color: transparent;
+  background-position: center;
 }
 
-.social-icon svg {
-  padding: 20px;
-  width: 78px;
-  height: auto;
+.social-icon .instagram {
+  background-image: url("../images/social-insta.svg");
 }
 
-.social-icon:hover svg {
+.social-icon .only-fans {
+  background-image: url("../images/social-only-fans.svg");
+}
+
+.social-icon .tiktok {
+  background-image: url("../images/social-tiktok.svg");
+}
+
+.social-icon .twitter {
+  background-image: url("../images/social-twitter.svg");
+}
+
+.social-icon:hover i {
   transform: scale(105%);
-  fill: var(--color-accent-hover);
+  background-color: var(--color-accent-hover);
 }
 
-.social-icon:active svg  {
+.social-icon:active i  {
   transition: all 0.3s;
-  fill: var(--color-accent-pressed);
+  background-color: var(--color-accent-pressed);
   transform: scale(95%);
 }
 

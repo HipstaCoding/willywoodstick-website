@@ -1,40 +1,23 @@
+#contact-me {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.1em;
+}
+
 .contact-socials {
   list-style: none;
   padding: 0;
-}
-
-.contact-socials li {
-  height: 60px;
-  line-height: 100%;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.contact-socials li:before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  display: inline-block;
-  vertical-align: middle;
+.contact-socials li {
+  padding-bottom: 30px;
 }
 
-.contact-socials .contact-instagram {
-  background-image: url("../images/insta-round.svg");
-  background-repeat: no-repeat;
-}
-
-.contact-socials .contact-onlyfans {
-  background-image: url("../images/only-fans-round.svg");
-  background-repeat: no-repeat;
-}
-
-.contact-socials .contact-tiktok {
-  background-image: url("../images/tiktok-round.svg");
-  background-repeat: no-repeat;
-}
-
-.contact-socials .contact-twitter {
-  background-image: url("../images/twitter-round.svg");
-  background-repeat: no-repeat;
+.contact-socials li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-socials b {
@@ -42,18 +25,51 @@
 }
 
 .contact-socials a {
+  width: 100%;
   height: 100%;
-  line-height: 100%;
-  display: inline-block;
-  margin-left: 20px;
-
   color: var(--color-text);
+}
+
+.contact-socials li a:before {
+  content: "";
+  display: block;
+  height: 64px;
+  width: 64px;
+  margin-right: 20px;
+  min-width: 48px;
+  flex: 0 1 auto;
+  background-size: contain;
+  background-position: center;
+}
+
+.contact-socials .contact-instagram a:before {
+  background-image: url("../images/social-insta.svg");
+  background-repeat: no-repeat;
+}
+
+.contact-socials .contact-onlyfans a:before {
+  background-image: url("../images/social-only-fans.svg");
+  background-repeat: no-repeat;
+}
+
+.contact-socials .contact-tiktok a:before {
+  background-image: url("../images/social-tiktok.svg");
+  background-repeat: no-repeat;
+}
+
+.contact-socials .contact-twitter a:before {
+  background-image: url("../images/social-twitter.svg");
+  background-repeat: no-repeat;
 }
 
 .contact-form {
   width: 100%;
   display: grid;
   gap: 30px;
+}
+
+.contact-form .primary-button {
+  margin-top: 20px;
 }
 
 .contact-form .radio-button:first-child {
@@ -63,4 +79,18 @@
 .contact-label-title {
   display: inline-block;
   margin-bottom: 10px;
+}
+
+.contact-email {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.contact-email a {
+  word-wrap: break-word;
+  color: var(--color-primary-text);
+}
+
+.contact-email b {
+  color: var(--color-accent);
 }

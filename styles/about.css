@@ -18,8 +18,10 @@
 }
 
 .about-photo {
-  margin: 60px -20px 0;
+  margin: 60px auto 0;
   width: calc(100% + 40px);
+  position: relative;
+  left: -20px;
   height: auto;
   display: block;
 }
