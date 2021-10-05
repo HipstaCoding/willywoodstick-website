@@ -30,18 +30,17 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/components.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/components.css" />
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/skills.css" />
     <link rel="stylesheet" href="styles/gallery.css" />
     <link rel="stylesheet" href="styles/contacts.css" />
   </head>
-
   <body>
-    <header>
+    <header class="font-header">
       <a class="logo" href="/"></a>
       <input class="menu-state" id="menu-state" type="checkbox" />
       <label class="menu-button" for="menu-state">
@@ -54,29 +53,34 @@
         <a href="#contact-me">contact me</a>
       </nav>
     </header>
-    <section class="container" id="hero">
-      <h1>Willy Woodstick</h1>
-      <hr />
-      <ul class="hero-skills">
-        <li><div>Web Developer</div></li>
-        <li><div>Webcam Model</div></li>
-        <li><div>Wood Chopper</div></li>
-      </ul>
-      <a class="primary-button" href="#contact-me"> hire me </a>
-      <div class="social-container">
-        <a href="#" class="social-icon">
-          <i class="instagram"></i>
-        </a>
-        <a href="#" class="social-icon">
-          <i class="tiktok"></i>
-        </a>
-        <a href="#" class="social-icon">
-          <i class="only-fans"></i>
-        </a>
-        <a href="#" class="social-icon">
-          <i class="twitter"></i>
-        </a>
-      </div>
+    <section id="hero">
+      <div class="hero-background"></div>
+      <main class="hero-content">
+        <div>
+          <h1>Willy Woodstick</h1>
+          <hr />
+          <ul class="hero-skills">
+            <li><div>Web Developer</div></li>
+            <li><div>Webcam Model</div></li>
+            <li><div>Wood Chopper</div></li>
+          </ul>
+        </div>
+        <a class="primary-button" href="#contact-me"> hire me </a>
+        <div class="social-container">
+          <a href="#" class="social-icon">
+            <i class="instagram"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="tiktok"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="only-fans"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="twitter"></i>
+          </a>
+        </div>
+      </main>
     </section>
     <section class="container" id="about-me">
       <h2>About me</h2>
@@ -1004,7 +1008,9 @@
         <input class="primary-button" type="submit" value="write me" />
       </form>
       <p class="contact-email font-socials">
-        <a href="mailto:willy@woodstick.cam">willy<b>@</b>woodstick<span class="no-wrap">.cam</span></a>
+        <a href="mailto:willy@woodstick.cam"
+          >willy<b>@</b>woodstick<span class="no-wrap">.cam</span></a
+        >
       </p>
     </section>
     <footer class="container font-socials">
