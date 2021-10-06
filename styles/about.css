@@ -1,3 +1,9 @@
+#about-me h2 {
+  z-index: 1;
+  background-color: var(--color-bg);
+  max-width: 400px;
+}
+
 .about-text {
   padding-left: 50px;
   position: relative;
@@ -24,4 +30,43 @@
   left: -20px;
   height: auto;
   display: block;
+}
+
+@media (min-width: 576px) {
+  .about-photo {
+    left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about-me {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: var(--header-height) calc(100vh - var(--header-height));
+    gap: 30px;
+    justify-content: end;
+  }
+
+  #about-me h2 {
+    grid-column: span 12;
+  }
+
+  .about-quote {
+    grid-column: span 6;
+    align-self: center;
+  }
+
+  .about-photo {
+    margin: 0;
+    grid-column: span 6;
+    margin-top: calc(0px - var(--header-height) - 30px);
+    left: 0;
+    justify-self: end;
+    align-self: start;
+    height: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: top;
+  }
 }

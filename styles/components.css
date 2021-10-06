@@ -1,13 +1,21 @@
 /* Logo */
 .logo {
   background-color: var(--color-accent);
-  background-image: url("../images/logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 168px 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 230px;
   height: var(--header-height);
-  display: block;
+  flex-shrink: 0;
+  transition: background-color 0.3s;
+}
+
+.logo:hover {
+  background-color: var(--color-primary-text);
+}
+
+.logo:hover svg {
+  fill: var(--color-bg);
 }
 
 /* Menu button */
@@ -262,6 +270,7 @@
   background-size: contain;
   background-color: transparent;
   background-position: center;
+  transition: all 0.3s;
 }
 
 .social-icon .instagram {

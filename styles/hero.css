@@ -14,6 +14,11 @@
   background-image: linear-gradient( var(--overlay), var(--overlay)), url("../images/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+}
+
+.hero-background img {
+  display: none;
 }
 
 .hero-content {
@@ -35,6 +40,7 @@
 #hero hr {
   width: 100%;
   margin: 20px 0;
+  border-color: var(--color-highlight);
 }
 
 .hero-skills {
@@ -86,17 +92,27 @@
 @media (min-width: 1200px) {
   #hero {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
   }
 
   .hero-background {
     height: 100%;
     width: 100%;
-    background-image: url("../images/hero-bg.jpg");
+    background-image: none;
     background-size: cover;
     background-position: center top;
     position: static;
+    overflow: visible;
+  }
+
+  .hero-background img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+    object-position: top;
   }
 
   .hero-content {
