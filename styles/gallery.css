@@ -2,7 +2,7 @@
   background-image: url("/images/Gallery-Background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: contain;
+  background-size: cover;
   padding-bottom: 200px;
 }
 
