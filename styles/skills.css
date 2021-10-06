@@ -99,6 +99,8 @@
 }
 
 @media (min-width: 992px) {
+
+
   .skills-container {
     margin-top: 0;
     grid-template-columns: repeat(4, 1fr);
@@ -114,6 +116,9 @@
 }
 
 @media (min-width: 1200px) {
+  #my-skills {
+    background-size: calc(100% - 40px) calc(100% - 40px);
+  }
   .skills-container {
     margin-top: 0;
     grid-template-columns: repeat(6, 1fr);
