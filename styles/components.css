@@ -217,6 +217,7 @@
   display: inline-block;
   position: relative;
   margin-right: 20px;
+  flex: 0 0 auto;
 }
 
 .checkbox:hover .icon, .checkbox input:focus + .icon {
@@ -274,10 +275,17 @@
 /* Social icons */
 .social-icon {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 84px;
+  height: 84px;
   padding: 18px;
   flex: 0 1 auto;
+}
+
+@media (min-width: 768px) {
+  .social-icon {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .social-icon i {
@@ -320,3 +328,19 @@
   transform: scale(95%);
 }
 
+.up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-accent);
+  z-index: 1;
+  color: var(--color-primary-text);
+
+  font-size: 36px;
+}

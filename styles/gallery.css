@@ -24,7 +24,6 @@
   #gallery {
     background-image: url("/images/Gallery-Background.jpg");
     background-position: left top var(--header-height);
-
   }
 
   .instagram-container {

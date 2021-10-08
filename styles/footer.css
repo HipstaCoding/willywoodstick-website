@@ -8,3 +8,15 @@ footer .copyright {
   max-width: 310px;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .copyright {
+    max-width: 100%;
+    text-align: right;
+  }
+}

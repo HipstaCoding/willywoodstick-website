@@ -2,6 +2,8 @@
   height: 1px;
   min-height: var(--hero-height);
   position: relative;
+  z-index: 2;
+  background-color: var(--color-bg);
 }
 
 .hero-background {
@@ -86,7 +88,6 @@
 .social-container {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 @media (min-width: 1200px) {
