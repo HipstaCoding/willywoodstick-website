@@ -1,0 +1,33 @@
+#gallery {
+  background-image: url("/images/Gallery-Background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  padding-bottom: 200px;
+}
+
+.instagram-media {
+  max-width: 540px;
+  overflow: hidden;
+  border: none!important;
+  justify-self: center;
+
+}
+
+.instagram-container {
+  display: grid;
+  gap: 30px;
+  /* justify-content: center; */
+}
+
+@media (min-width: 1200px) {
+  #gallery {
+    background-image: url("/images/Gallery-Background.jpg");
+    background-position: left top var(--header-height);
+  }
+
+  .instagram-container {
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

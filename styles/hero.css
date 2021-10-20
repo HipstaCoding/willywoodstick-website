@@ -1,0 +1,147 @@
+#hero {
+  height: var(--hero-height);
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-bg);
+  min-height: 700px;
+}
+
+.hero-background {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  --overlay: rgba(10, 14, 1, 0.7);
+  background-image: linear-gradient( var(--overlay), var(--overlay)), url("../images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero-background img {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+#hero h1 {
+  max-width: 300px;
+  text-align: center;
+  font-size: 48px;
+  margin: 0 auto;
+}
+
+#hero hr {
+  width: 100%;
+  margin: 20px 0;
+  border-color: var(--color-highlight);
+}
+
+.hero-skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-skills li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+} 
+
+.hero-skills li div {
+  width: 175px;
+}
+
+.hero-skills li::before {
+  content: " ";
+  display: block;
+  background-image: url("../images/axes-icon.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.hero-skills li::before {
+  margin-right: 10px;
+}
+
+.hero-skills li::after {
+  margin-left: 10px;
+}
+
+#hero .primary-button {
+  width: 100%;
+  max-width: 460px;
+  margin: 20px 0;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    min-height: 900px;
+
+  }
+
+  .hero-background {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background-size: cover;
+    background-position: center top;
+    position: static;
+    overflow: visible;
+  }
+
+  .hero-background img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .hero-content {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hero-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-skills li {
+    margin-left: 12px;
+  }
+
+  .hero-skills li:first-child {
+    margin-left: 0;
+  }
+
+  .hero-skills li:first-child::before {
+    content: none;
+  }
+
+  #hero h1 {
+    max-width: 100%;
+    font-size: 72px;
+  }
+}

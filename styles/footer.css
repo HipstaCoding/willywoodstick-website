@@ -1,0 +1,22 @@
+footer {
+  border-top: 2px solid var(--color-primary-text);
+  padding: 50px 0;
+}
+
+footer .copyright {
+  margin-top: 30px;
+  max-width: 310px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .copyright {
+    max-width: 100%;
+    text-align: right;
+  }
+}

@@ -1,0 +1,346 @@
+/* Logo */
+.logo {
+  background-color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: var(--header-height);
+  flex-shrink: 0;
+  transition: background-color 0.3s;
+}
+
+.logo:hover {
+  background-color: var(--color-primary-text);
+}
+
+.logo:hover svg {
+  fill: var(--color-bg);
+}
+
+/* Menu button */
+.menu-state {
+  display: none;
+}
+
+.menu-button {
+  width: 130px;
+  height: var(--header-height);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-icon, .menu-icon::before, .menu-icon::after {
+  display: block;
+  max-width: 60px;
+  width: 100%;
+  height: 6px;
+  border-radius: 2.5px;
+  background-color: var(--color-primary-text);
+  left: 0;
+  transform-origin: 50% 50%;
+  transition: all .5s ease-out;
+}
+
+.menu-icon {
+  position: relative;
+}
+
+.menu-icon::after, .menu-icon::before {
+  content: "";
+  position: absolute;
+}
+
+.menu-icon::before {
+  top: -21px;
+}
+
+.menu-icon::after {
+  top: 21px;
+}
+
+.menu-state:checked ~ .menu-button .menu-icon {
+  background: transparent;
+}
+
+.menu-state:checked ~ .menu-button .menu-icon::before {
+  transform: translateY(350%) rotate(calc(2 * 360deg + 45deg));
+}
+
+.menu-state:checked ~ .menu-button .menu-icon::after {
+  transform: translateY(-350%) rotate(calc(2 * -360deg + -45deg));
+}
+/* Buttons */
+
+.primary-button {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--color-accent);
+  color: var(--color-primary-text);
+  box-shadow: 0px 0px 20px 5px#550808, inset 0px 0px 0px 0px#550808;
+
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  height: 60px;
+  border-radius: 50px;
+  padding: 0 30px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.265em;
+  position: relative;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.primary-button:before {
+  content: "";
+  border-radius: inherit;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.primary-button:active {
+  box-shadow: 0px 0px 0px 0px#550808, inset 0px 0px 10px 5px#550808;
+  color: #d3cfcf;
+  transform: scale(0.95);
+}
+
+/* Input fields */
+
+.text-field {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: none;
+  border-bottom: 2px solid var(--color-accent);
+  padding: 12px 10px;
+  transition: border 0.3s;
+  min-height: 64px;
+}
+
+.text-field:valid {
+  border-bottom: 2px solid var(--color-success);
+}
+
+.text-field:focus {
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid var(--color-highlight);
+}
+
+.text-field:hover:not(:valid) {
+  border-bottom: 2px solid var(--color-highlight);
+}
+
+/* Radio button */
+
+.radio-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.radio-button:not(:last-child) {
+  padding-right: 30px;
+}
+
+.radio-button .icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--color-primary-text);
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+.radio-button input {
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-button:hover .icon {
+  background-color: var(--color-highlight);
+}
+
+.radio-button input:focus + .icon {
+  background-color: var(--color-highlight);
+}
+
+.radio-button input:checked + .icon {
+  background-color: var(--color-success);
+}
+
+.radio-button input:checked + .icon:before {
+  content: '';
+  background-color: var(--color-primary-text);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 7px;
+  left: 7px;
+  border-radius: 50%;
+}
+
+/* Checkbox button */
+
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox .icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: var(--color-primary-text);
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  flex: 0 0 auto;
+}
+
+.checkbox:hover .icon, .checkbox input:focus + .icon {
+  background-color: var(--color-highlight);
+}
+
+.checkbox input:checked + .icon {
+  background-color: var(--color-success);
+}
+
+.checkbox input:checked + .icon:before {
+  content: '';
+  display: block;
+  background-image: url(../images/axe-checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* File input */
+
+.file-upload-area {
+  display: block;
+  min-height: 64px;
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: 2px dashed var(--color-bg);
+  background-color: var(--color-highlight);
+  color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.file-upload-area b {
+  color: var(--color-accent);
+}
+
+.file-upload-area input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* Social icons */
+.social-icon {
+  display: block;
+  width: 84px;
+  height: 84px;
+  padding: 18px;
+  flex: 0 1 auto;
+}
+
+@media (min-width: 768px) {
+  .social-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.social-icon i {
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center;
+  transition: all 0.3s;
+}
+
+.social-icon .instagram {
+  background-image: url("../images/social-insta.svg");
+}
+
+.social-icon .only-fans {
+  background-image: url("../images/social-only-fans.svg");
+}
+
+.social-icon .tiktok {
+  background-image: url("../images/social-tiktok.svg");
+}
+
+.social-icon .twitter {
+  background-image: url("../images/social-twitter.svg");
+}
+
+.social-icon:hover i {
+  transform: scale(105%);
+  background-color: var(--color-accent-hover);
+}
+
+.social-icon:active i  {
+  transition: all 0.3s;
+  background-color: var(--color-accent-pressed);
+  transform: scale(95%);
+}
+
+.up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-accent);
+  z-index: 1;
+  color: var(--color-primary-text);
+
+  font-size: 36px;
+}

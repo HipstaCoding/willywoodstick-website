@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Willy Woodstick Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/contacts.css" />
+  </head>
+  <body>
+    <header class="font-header">
+      <a class="logo" href="/">
+        <svg
+          width="168"
+          height="78"
+          fill="#FFF9FA"
+          viewbox="0 0 168 78"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.164185 9.99023L15.8986 3.08783V7.06703L5.20418 11.759L15.8986 16.4462V20.4278L0.164185 13.5254V9.99023ZM30.865 4.04543H35.2858V21.035H30.865V14.4758H22.6738V21.035H18.253V4.04543H22.6738V10.6046H30.865V4.04543ZM46.5346 17.1518H50.9074V21.0518H37.7362V17.1638H42.109V10.6838C40.9931 11.4112 39.6848 11.7874 38.353 11.7638H37.849V7.62623H38.353C40.1626 7.62623 42.109 6.66623 42.109 4.55423V4.05023H46.5298L46.5346 17.1518ZM88.4338 15.6998C88.4338 19.0598 85.1938 21.3038 80.3722 21.3038C75.397 21.3038 70.7866 18.8222 70.7866 18.8222L72.6274 15.1358C72.6274 15.1358 76.9474 17.219 80.0674 17.219C82.7074 17.219 84.2242 16.8878 84.2242 15.779C84.2242 14.9486 83.845 14.2814 79.3114 14.2814C73.3114 14.2814 72.049 12.2342 72.049 9.90383C72.049 6.06383 75.169 3.78623 80.3698 3.78623C85.045 3.78623 87.6514 5.55983 87.6514 5.55983L86.1226 9.29183C86.1226 9.29183 83.1514 7.85183 80.0938 7.85183C77.473 7.85183 76.2922 8.57183 76.2922 9.29183C76.2922 9.96143 76.6882 10.4918 81.0922 10.4918C85.5562 10.4918 88.4338 12.2078 88.4338 15.6998ZM89.2714 4.04543H105.267V7.91663H99.481V21.035H95.0578V7.91663H89.2714V4.04543ZM70.5826 42.8102C68.701 45.2798 65.6962 46.6502 62.1226 46.6502C56.1682 46.6502 51.8482 43.2566 51.8482 37.8878C51.8482 32.519 56.1682 29.1422 62.1226 29.1422C65.6938 29.1422 68.6962 30.5006 70.5754 32.9654L67.1026 35.2118C66.2314 33.8294 64.5562 33.131 62.1226 33.131C58.2514 33.131 56.3626 34.331 56.3626 37.8734C56.3626 41.4158 58.2442 42.635 62.1226 42.635C64.561 42.635 66.2386 41.9342 67.1074 40.547L70.5826 42.8102ZM120.107 42.4886H124.479V46.3742H111.313V42.4886H115.688V36.0086C114.572 36.7348 113.264 37.1109 111.932 37.0886H111.416V32.9606H111.923C113.73 32.9606 115.679 32.0006 115.679 29.891V29.3846H120.097L120.107 42.4886ZM139.225 29.3822H143.394V46.3718H139.422L130.561 35.831V46.3718H126.392V29.3822H130.364L139.225 39.923V29.3822ZM156.121 37.1318H165.932V46.3766H161.511V45.1238C159.732 46.1471 157.708 46.6688 155.655 46.6334C149.703 46.6334 145.383 43.2494 145.383 37.883C145.383 32.5166 149.703 29.1302 155.655 29.1302C162.167 29.1302 165.111 32.3054 165.111 32.3054L161.991 34.9022C161.991 34.9022 160.179 33.131 155.667 33.131C151.799 33.131 149.907 34.331 149.907 37.8806C149.907 41.4302 151.789 42.6326 155.667 42.6326C157.827 42.6326 159.356 42.095 160.29 40.9934H156.121V37.1318ZM40.2442 66.3686C40.2442 69.7286 37.0066 71.975 32.1826 71.975C27.2074 71.975 22.5994 69.491 22.5994 69.491L24.4378 65.8046C24.4378 65.8046 28.7578 67.8902 31.8778 67.8902C34.5178 67.8902 36.0322 67.5566 36.0322 66.4502C36.0322 65.6174 35.653 64.9502 31.1194 64.9502C25.1194 64.9502 23.8594 62.9054 23.8594 60.575C23.8594 56.735 26.9794 54.455 32.1778 54.455C36.853 54.455 39.4618 56.2286 39.4618 56.2286L37.9306 59.9534C37.9306 59.9534 34.9594 58.5134 31.9018 58.5134C29.281 58.5134 28.1002 59.2334 28.1002 59.9534C28.1002 60.6206 28.4938 61.1534 32.9002 61.1534C37.3666 61.1726 40.2442 62.8766 40.2442 66.3686ZM60.2434 68.1446C58.3642 70.6142 55.3594 71.9846 51.7834 71.9846C45.829 71.9846 41.509 68.5886 41.509 63.2198C41.509 57.851 45.829 54.4742 51.7834 54.4742C55.3546 54.4742 58.357 55.8326 60.2386 58.2974L56.7634 60.5582C55.8946 59.1758 54.2194 58.4774 51.7834 58.4774C47.9122 58.4774 46.0234 59.6774 46.0234 63.2198C46.0234 66.7622 47.9074 67.9814 51.7834 67.9814C54.2218 67.9814 55.8994 67.2806 56.7682 65.8934L60.2434 68.1446ZM74.6122 54.7142H79.033V71.7038H74.6122V65.1446H66.421V71.7038H62.0002V54.7142H66.421V61.2758H74.6122V54.7142ZM69.8794 10.1606C69.8794 13.1582 68.2714 16.6598 63.745 16.6598H57.241V21.035H52.8202V4.04543H63.4162C68.5258 4.04543 69.8794 8.04623 69.8794 10.1606ZM57.2386 7.91663V12.7886H63.7426C65.6986 12.7886 65.7202 10.6286 65.7202 10.5446C65.7202 9.75503 65.497 7.90463 63.4066 7.90463L57.2386 7.91663ZM115.208 4.04543L121.419 21.035H116.936L115.94 18.3038H108.74L107.739 21.035H103.256L109.472 4.04543H115.208ZM112.34 8.46863L110.159 14.435H114.522L112.34 8.46863ZM90.0562 37.8902C90.0562 43.6046 86.5066 46.643 80.7922 46.643C75.0778 46.643 71.5282 43.6022 71.5282 37.8902C71.5282 32.1782 75.0802 29.135 80.7922 29.135C86.5042 29.135 90.0562 32.1758 90.0562 37.8902ZM80.7922 33.1358C76.7842 33.1358 76.0522 34.4006 76.0522 37.8902C76.0522 41.3798 76.7722 42.6422 80.7922 42.6422C84.8122 42.6422 85.5322 41.3798 85.5322 37.8902C85.5322 34.4006 84.7882 33.1358 80.7802 33.1358H80.7922ZM109.482 37.8638C109.482 43.583 106.659 46.3718 101.735 46.3718H92.4034V29.3822H101.723C106.647 29.3822 109.47 32.1446 109.47 37.8638H109.482ZM101.735 33.2534H96.8242V42.5006H101.723C103.367 42.5006 104.843 42.6014 104.843 37.8638C104.843 33.1262 103.367 33.2534 101.723 33.2534H101.735ZM101.576 63.2198C101.576 68.5886 97.2562 71.975 91.2994 71.975C85.3426 71.975 81.0274 68.5886 81.0274 63.2198C81.0274 57.851 85.3474 54.4646 91.2994 54.4646C97.2514 54.4646 101.576 57.8534 101.576 63.2198ZM91.3042 58.4678C87.4354 58.4678 85.5442 59.6798 85.5442 63.2198C85.5442 66.7598 87.4258 67.9718 91.3042 67.9718C95.1826 67.9718 97.0642 66.7718 97.0642 63.2198C97.0642 59.6678 95.1754 58.4678 91.3042 58.4678ZM123.349 63.2198C123.349 68.5886 119.029 71.975 113.072 71.975C107.115 71.975 102.8 68.5886 102.8 63.2198C102.8 57.851 107.12 54.4646 113.072 54.4646C119.024 54.4646 123.349 57.8534 123.349 63.2198ZM113.072 58.4678C109.203 58.4678 107.312 59.6798 107.312 63.2198C107.312 66.7598 109.194 67.9718 113.072 67.9718C116.951 67.9718 118.832 66.7718 118.832 63.2198C118.832 59.6678 116.936 58.4678 113.072 58.4678ZM129.747 67.835H139.379V71.7062H125.327V54.7166H129.747V67.835ZM150.899 49.1918L143.826 78.1334H139.379L146.451 49.1918H150.899ZM152.202 53.759L167.936 60.659V64.1942L152.202 71.0966V67.1174L162.894 62.4278L152.202 57.7382V53.759ZM0.164185 53.6534H20.6314V78.1334H0.164185V53.6534ZM125.689 0.0542297H167.951V26.639H125.689V0.0542297ZM0.164185 24.0878H48.3106V50.6726H0.164185V24.0878Z"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect width="168" height="78" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <input class="menu-state" id="menu-state" type="checkbox" />
+      <label class="menu-button" for="menu-state">
+        <span class="menu-icon"></span>
+      </label>
+      <nav class="header-nav">
+        <a href="#about-me">about me</a>
+        <a href="#my-skills">my skills</a>
+        <a href="#gallery">gallery</a>
+        <a href="#contact-me">contact me</a>
+      </nav>
+    </header>
+    <section id="hero">
+      <div class="hero-background">
+        <img src="./images/Hero-bg.jpg" width="700" height="887" />
+      </div>
+      <main class="hero-content">
+        <div>
+          <h1>Willy Woodstick</h1>
+          <hr />
+          <ul class="hero-skills">
+            <li><div>Web Developer</div></li>
+            <li><div>Webcam Model</div></li>
+            <li><div>Wood Chopper</div></li>
+          </ul>
+        </div>
+        <a class="primary-button" href="#contact-me"> hire me </a>
+        <div class="social-container">
+          <a href="#" class="social-icon">
+            <i class="instagram"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="tiktok"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="only-fans"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="twitter"></i>
+          </a>
+        </div>
+      </main>
+    </section>
+    <a href="#" class="up-button"><i class="fas fa-angle-double-up"></i></a>
+    <section class="small-container" id="about-me">
+      <h2>About me</h2>
+      <figure class="about-quote">
+        <blockquote>
+          <p class="about-text">
+            Back in the days I used to be a simple lumberjack. I chopped some wood and made photos
+            for my onlyfans. But nowadays there is not much wood in the forest so I decided to
+            become a Web Developer.
+          </p>
+        </blockquote>
+        <figcaption class="about-author">
+          <b class="highlight">—</b> Willy Woodstick, <br />
+          Web Developer
+        </figcaption>
+      </figure>
+      <img
+        alt="Willy Reading"
+        class="about-photo"
+        width="375"
+        height="464"
+        src="./images/about.jpg"
+      />
+    </section>
+    <section class="container" id="my-skills">
+      <h2>My skills</h2>
+      <div class="skills-container">
+        <div class="skill skill-html">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="skill-text">
+              Like wood is a carcass for a tree, HTML is a structure for a website. And like nature
+              knows how to grow a massive tree I know how to build a proper HTML.
+            </div>
+          </div>
+        </div>
+        <div class="skill skill-css">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="skill-text">
+              What makes a tree such a beauty? Yeah, that’s right - leafs. So without an animated
+              CSS website is just naked and ugly HTML.
+            </div>
+          </div>
+        </div>
+        <div class="skill skill-vscode">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="skill-text">
+              Who am I without a strong tool in my hands? Would I be able to chop a tree without my
+              sharp axe? That’s why I need a powerful code editor and useful hotkeys knowledge.
+            </div>
+          </div>
+        </div>
+        <div class="skill skill-figma">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="skill-text">
+              Who am I without a strong tool in my hands? Would I be able to chop a tree without my
+              sharp axe? That’s why I need a powerful code editor and useful hotkeys knowledge.
+            </div>
+          </div>
+        </div>
+        <div class="skill skill-github">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="skill-text">
+              Who am I without a strong tool in my hands? Would I be able to chop a tree without my
+              sharp axe? That’s why I need a powerful code editor and useful hotkeys knowledge.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="gallery">
+      <h2>Gallery</h2>
+      <div class="instagram-container">
+        <blockquote
+          class="instagram-media"
+          data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/p/CPRGTWPtAUO/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="13"
+          style="
+            background: #fff;
+            border: 0;
+            border-radius: 3px;
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+            margin: 1px;
+            max-width: 540px;
+            min-width: 326px;
+            padding: 0;
+            width: 99.375%;
+            width: -webkit-calc(100% - 2px);
+            width: calc(100% - 2px);
+          "
+        >
+          <div style="padding: 16px">
+            <a
+              href="https://www.instagram.com/p/CPRGTWPtAUO/?utm_source=ig_embed&amp;utm_campaign=loading"
+              style="
+                background: #ffffff;
+                line-height: 0;
+                padding: 0 0;
+                text-align: center;
+                text-decoration: none;
+                width: 100%;
+              "
+              target="_blank"
+            >
+              <div style="display: flex; flex-direction: row; align-items: center">
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 50%;
+                    flex-grow: 0;
+                    height: 40px;
+                    margin-right: 14px;
+                    width: 40px;
+                  "
+                ></div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      margin-bottom: 6px;
+                      width: 100px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      width: 60px;
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div style="padding: 19% 0"></div>
+              <div style="display: block; height: 50px; margin: 0 auto 12px; width: 50px">
+                <svg
+                  width="50px"
+                  height="50px"
+                  viewbox="0 0 60 60"
+                  version="1.1"
+                  xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink"
+                >
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                      <g>
+                        <path
+                          d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div style="padding-top: 8px">
+                <div
+                  style="
+                    color: #3897f0;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 550;
+                    line-height: 18px;
+                  "
+                >
+                  View this post on Instagram
+                </div>
+              </div>
+              <div style="padding: 12.5% 0"></div>
+              <div
+                style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center"
+              >
+                <div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      height: 12.5px;
+                      width: 12.5px;
+                      transform: translateX(0px) translateY(7px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      height: 12.5px;
+                      transform: rotate(-45deg) translateX(3px) translateY(1px);
+                      width: 12.5px;
+                      flex-grow: 0;
+                      margin-right: 14px;
+                      margin-left: 2px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      height: 12.5px;
+                      width: 12.5px;
+                      transform: translateX(9px) translateY(-18px);
+                    "
+                  ></div>
+                </div>
+                <div style="margin-left: 8px">
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      flex-grow: 0;
+                      height: 20px;
+                      width: 20px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      width: 0;
+                      height: 0;
+                      border-top: 2px solid transparent;
+                      border-left: 6px solid #f4f4f4;
+                      border-bottom: 2px solid transparent;
+                      transform: translateX(16px) translateY(-4px) rotate(30deg);
+                    "
+                  ></div>
+                </div>
+                <div style="margin-left: auto">
+                  <div
+                    style="
+                      width: 0px;
+                      border-top: 8px solid #f4f4f4;
+                      border-right: 8px solid transparent;
+                      transform: translateY(16px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      flex-grow: 0;
+                      height: 12px;
+                      width: 16px;
+                      transform: translateY(-4px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      width: 0;
+                      height: 0;
+                      border-top: 8px solid #f4f4f4;
+                      border-left: 8px solid transparent;
+                      transform: translateY(-4px) translateX(8px);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                  justify-content: center;
+                  margin-bottom: 24px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 4px;
+                    flex-grow: 0;
+                    height: 14px;
+                    margin-bottom: 6px;
+                    width: 224px;
+                  "
+                ></div>
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 4px;
+                    flex-grow: 0;
+                    height: 14px;
+                    width: 144px;
+                  "
+                ></div>
+              </div>
+            </a>
+            <p
+              style="
+                color: #c9c8cd;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 0;
+                margin-top: 8px;
+                overflow: hidden;
+                padding: 8px 0 7px;
+                text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              "
+            >
+              <a
+                href="https://www.instagram.com/p/CPRGTWPtAUO/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="
+                  color: #c9c8cd;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: normal;
+                  line-height: 17px;
+                  text-decoration: none;
+                "
+                target="_blank"
+                >A post shared by Willy (@willywoodstick)</a
+              >
+            </p>
+          </div>
+        </blockquote>
+        <blockquote
+          class="instagram-media"
+          data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/p/CPRDapBNbJ3/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="13"
+          style="
+            background: #fff;
+            border: 0;
+            border-radius: 3px;
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+            margin: 1px;
+            max-width: 540px;
+            min-width: 326px;
+            padding: 0;
+            width: 99.375%;
+            width: -webkit-calc(100% - 2px);
+            width: calc(100% - 2px);
+          "
+        >
+          <div style="padding: 16px">
+            <a
+              href="https://www.instagram.com/p/CPRDapBNbJ3/?utm_source=ig_embed&amp;utm_campaign=loading"
+              style="
+                background: #ffffff;
+                line-height: 0;
+                padding: 0 0;
+                text-align: center;
+                text-decoration: none;
+                width: 100%;
+              "
+              target="_blank"
+            >
+              <div style="display: flex; flex-direction: row; align-items: center">
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 50%;
+                    flex-grow: 0;
+                    height: 40px;
+                    margin-right: 14px;
+                    width: 40px;
+                  "
+                ></div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      margin-bottom: 6px;
+                      width: 100px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      width: 60px;
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div style="padding: 19% 0"></div>
+              <div style="display: block; height: 50px; margin: 0 auto 12px; width: 50px">
+                <svg
+                  width="50px"
+                  height="50px"
+                  viewbox="0 0 60 60"
+                  version="1.1"
+                  xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink"
+                >
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                      <g>
+                        <path
+                          d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div style="padding-top: 8px">
+                <div
+                  style="
+                    color: #3897f0;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 18px;
+                  "
+                >
+                  View this post on Instagram
+                </div>
+              </div>
+              <div style="padding: 12.5% 0"></div>
+              <div
+                style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center"
+              >
+                <div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      height: 12.5px;
+                      width: 12.5px;
+                      transform: translateX(0px) translateY(7px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      height: 12.5px;
+                      transform: rotate(-45deg) translateX(3px) translateY(1px);
+                      width: 12.5px;
+                      flex-grow: 0;
+                      margin-right: 14px;
+                      margin-left: 2px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      height: 12.5px;
+                      width: 12.5px;
+                      transform: translateX(9px) translateY(-18px);
+                    "
+                  ></div>
+                </div>
+                <div style="margin-left: 8px">
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      flex-grow: 0;
+                      height: 20px;
+                      width: 20px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      width: 0;
+                      height: 0;
+                      border-top: 2px solid transparent;
+                      border-left: 6px solid #f4f4f4;
+                      border-bottom: 2px solid transparent;
+                      transform: translateX(16px) translateY(-4px) rotate(30deg);
+                    "
+                  ></div>
+                </div>
+                <div style="margin-left: auto">
+                  <div
+                    style="
+                      width: 0px;
+                      border-top: 8px solid #f4f4f4;
+                      border-right: 8px solid transparent;
+                      transform: translateY(16px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      flex-grow: 0;
+                      height: 12px;
+                      width: 16px;
+                      transform: translateY(-4px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      width: 0;
+                      height: 0;
+                      border-top: 8px solid #f4f4f4;
+                      border-left: 8px solid transparent;
+                      transform: translateY(-4px) translateX(8px);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                  justify-content: center;
+                  margin-bottom: 24px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 4px;
+                    flex-grow: 0;
+                    height: 14px;
+                    margin-bottom: 6px;
+                    width: 224px;
+                  "
+                ></div>
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 4px;
+                    flex-grow: 0;
+                    height: 14px;
+                    width: 144px;
+                  "
+                ></div>
+              </div>
+            </a>
+            <p
+              style="
+                color: #c9c8cd;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 0;
+                margin-top: 8px;
+                overflow: hidden;
+                padding: 8px 0 7px;
+                text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              "
+            >
+              <a
+                href="https://www.instagram.com/p/CPRDapBNbJ3/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="
+                  color: #c9c8cd;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: normal;
+                  line-height: 17px;
+                  text-decoration: none;
+                "
+                target="_blank"
+                >A post shared by Willy (@willywoodstick)</a
+              >
+            </p>
+          </div>
+        </blockquote>
+        <blockquote
+          class="instagram-media"
+          data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/p/CPRBZ_WNXNP/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="13"
+          style="
+            background: #fff;
+            border: 0;
+            border-radius: 3px;
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+            margin: 1px;
+            max-width: 540px;
+            min-width: 326px;
+            padding: 0;
+            width: 99.375%;
+            width: -webkit-calc(100% - 2px);
+            width: calc(100% - 2px);
+          "
+        >
+          <div style="padding: 16px">
+            <a
+              href="https://www.instagram.com/p/CPRBZ_WNXNP/?utm_source=ig_embed&amp;utm_campaign=loading"
+              style="
+                background: #ffffff;
+                line-height: 0;
+                padding: 0 0;
+                text-align: center;
+                text-decoration: none;
+                width: 100%;
+              "
+              target="_blank"
+            >
+              <div style="display: flex; flex-direction: row; align-items: center">
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 50%;
+                    flex-grow: 0;
+                    height: 40px;
+                    margin-right: 14px;
+                    width: 40px;
+                  "
+                ></div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      margin-bottom: 6px;
+                      width: 100px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      width: 60px;
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div style="padding: 19% 0"></div>
+              <div style="display: block; height: 50px; margin: 0 auto 12px; width: 50px">
+                <svg
+                  width="50px"
+                  height="50px"
+                  viewbox="0 0 60 60"
+                  version="1.1"
+                  xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink"
+                >
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                      <g>
+                        <path
+                          d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div style="padding-top: 8px">
+                <div
+                  style="
+                    color: #3897f0;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 18px;
+                  "
+                >
+                  View this post on Instagram
+                </div>
+              </div>
+              <div style="padding: 12.5% 0"></div>
+              <div
+                style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center"
+              >
+                <div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      height: 12.5px;
+                      width: 12.5px;
+                      transform: translateX(0px) translateY(7px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      height: 12.5px;
+                      transform: rotate(-45deg) translateX(3px) translateY(1px);
+                      width: 12.5px;
+                      flex-grow: 0;
+                      margin-right: 14px;
+                      margin-left: 2px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      height: 12.5px;
+                      width: 12.5px;
+                      transform: translateX(9px) translateY(-18px);
+                    "
+                  ></div>
+                </div>
+                <div style="margin-left: 8px">
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      flex-grow: 0;
+                      height: 20px;
+                      width: 20px;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      width: 0;
+                      height: 0;
+                      border-top: 2px solid transparent;
+                      border-left: 6px solid #f4f4f4;
+                      border-bottom: 2px solid transparent;
+                      transform: translateX(16px) translateY(-4px) rotate(30deg);
+                    "
+                  ></div>
+                </div>
+                <div style="margin-left: auto">
+                  <div
+                    style="
+                      width: 0px;
+                      border-top: 8px solid #f4f4f4;
+                      border-right: 8px solid transparent;
+                      transform: translateY(16px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      flex-grow: 0;
+                      height: 12px;
+                      width: 16px;
+                      transform: translateY(-4px);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      width: 0;
+                      height: 0;
+                      border-top: 8px solid #f4f4f4;
+                      border-left: 8px solid transparent;
+                      transform: translateY(-4px) translateX(8px);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                  justify-content: center;
+                  margin-bottom: 24px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 4px;
+                    flex-grow: 0;
+                    height: 14px;
+                    margin-bottom: 6px;
+                    width: 224px;
+                  "
+                ></div>
+                <div
+                  style="
+                    background-color: #f4f4f4;
+                    border-radius: 4px;
+                    flex-grow: 0;
+                    height: 14px;
+                    width: 144px;
+                  "
+                ></div>
+              </div>
+            </a>
+            <p
+              style="
+                color: #c9c8cd;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 0;
+                margin-top: 8px;
+                overflow: hidden;
+                padding: 8px 0 7px;
+                text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              "
+            >
+              <a
+                href="https://www.instagram.com/p/CPRBZ_WNXNP/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style="
+                  color: #c9c8cd;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: normal;
+                  line-height: 17px;
+                  text-decoration: none;
+                "
+                target="_blank"
+                >A post shared by Willy (@willywoodstick)</a
+              >
+            </p>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+    <section class="container" id="contact-me">
+      <h2>Contacts</h2>
+      <form
+        method="POST"
+        action="https://getform.io/f/1257a099-4b21-48b2-8e56-8deab02ef56f"
+        enctype="multipart/form-data"
+        class="contact-form"
+      >
+        <a href="" class="contact-social font-socials contact-instagram"><b>@</b>willywoodstick</a>
+        <a href="" class="contact-social font-socials contact-onlyfans"><b>@</b>willywoodstick</a>
+        <a href="" class="contact-social font-socials contact-tiktok"><b>@</b>willywoodstick</a>
+        <a href="" class="contact-social font-socials contact-twitter"><b>@</b>willywoodstick</a>
+        <input
+          class="text-field"
+          id="name-input"
+          placeholder="Your email"
+          required
+          name="email"
+          type="email"
+        />
+        <select class="text-field" id="subject-input" name="subject" required>
+          <option disabled selected value>Choose subject</option>
+          <option>Let's work</option>
+          <option>Let's talk</option>
+          <option>Let's hangout</option>
+        </select>
+        <textarea
+          id="message-input"
+          class="text-field"
+          name="message"
+          required
+          rows="4"
+          placeholder="Your message"
+        ></textarea>
+        <label class="contact-label-title" for="female-gender">Gender</label>
+
+        <fieldset class="contact-gender">
+          <label class="radio-button">
+            <input type="radio" required id="female-gender" name="gender" value="Female" />
+            <span class="icon"></span>
+            Female
+          </label>
+          <label class="radio-button">
+            <input type="radio" required checked name="gender" value="Other" />
+            <span class="icon"></span>
+            Other
+          </label>
+        </fieldset>
+
+        <label for="agreement" class="contact-label-title">I’m atleast 18 years old</label>
+        <label id="agree-checkbox" for="agreement" class="checkbox">
+          <input id="agreement" name="agreement" required type="checkbox" />
+          <span class="icon"></span>
+          And I have a sense of humor 😉</label
+        >
+
+        <label class="contact-label-title" for="file-upload"
+          >Attach your photo <span class="no-wrap">(max 5 mb)</span></label
+        >
+        <label class="file-upload-area">
+          <span
+            >Drag & drop <span class="no-wrap"> or <b>browse</b></span></span
+          >
+          <input id="file-upload" accept="image/png, image/jpeg" name="photo" type="file" />
+        </label>
+        <input class="primary-button" type="submit" value="write me" />
+        <p class="contact-email font-socials">
+          <a href="mailto:willy@woodstick.cam"
+            >willy<b>@</b>woodstick<span class="no-wrap">.cam</span></a
+          >
+        </p>
+      </form>
+    </section>
+    <footer class="container font-socials">
+      <div class="social-container">
+        <a href="#" class="social-icon">
+          <i class="instagram"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="tiktok"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="only-fans"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="twitter"></i>
+        </a>
+      </div>
+      <p class="copyright">
+        <span class="no-wrap"><span class="highlight">©</span> Copyright 2021,</span> Hipsta Coding
+        School
+      </p>
+    </footer>
+    <script async src="//www.instagram.com/embed.js"></script>
+  </body>
+</html>
+
