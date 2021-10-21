@@ -2,6 +2,7 @@
   position: relative;
   z-index: 2;
   background-color: var(--color-bg);
+  min-height: 900px;
 }
 
 #about-me h2 {
@@ -48,7 +49,7 @@
   #about-me {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: var(--header-height) calc(100vh - var(--header-height));
+    grid-template-rows: var(--header-height) min-content;
     gap: 30px;
     justify-content: end;
     background-color: transparent;
@@ -70,7 +71,6 @@
     left: 0;
     justify-self: end;
     align-self: start;
-    height: 100%;
     max-width: 100%;
     min-height: 100vh;
     object-fit: cover;

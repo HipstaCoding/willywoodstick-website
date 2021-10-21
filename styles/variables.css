@@ -1,6 +1,6 @@
 :root {
   /* sizes */
-  --header-height: 135px;
+  --header-height: 100px;
   --hero-height: calc(100% - var(--header-height));
   --nav-height: calc(100vh - var(--header-height));
   
@@ -17,3 +17,10 @@
   --color-bg: #0A0E01;
 }
 
+@media (min-width: 996px) {
+  :root {
+    --header-height: 135px;
+    --hero-height: calc(100% - var(--header-height));
+    --nav-height: calc(100vh - var(--header-height));
+  }
+}

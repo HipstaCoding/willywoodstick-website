@@ -1,9 +1,9 @@
 #hero {
-  height: 1px;
-  min-height: var(--hero-height);
+  height: var(--hero-height);
   position: relative;
   z-index: 2;
   background-color: var(--color-bg);
+  min-height: 700px;
 }
 
 .hero-background {
@@ -95,6 +95,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
+    min-height: 900px;
   }
 
   .hero-background {
@@ -111,7 +112,6 @@
     display: block;
     width: 100%;
     height: auto;
-    max-height: 100vh;
     object-fit: cover;
     object-position: top;
   }
